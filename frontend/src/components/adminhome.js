@@ -33,7 +33,7 @@ export const Adminhome = () => {
     const [strength,changestrength]=useState(200)
 
     const getalldata = async (e) => {
-        const response = await fetch(`http://${state.backend}:${state.port}/api/ad/getallusers`, {
+        const response = await fetch(`https://deploy-web-abs.vercel.app/api/ad/getallusers`, {
             method: 'get',
             headers: {
                 'Content-Type': 'application/json',

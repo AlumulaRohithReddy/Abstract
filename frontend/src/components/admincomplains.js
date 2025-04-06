@@ -7,7 +7,7 @@ export const Admincomplains = () => {
 
   const fetchComplaints = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/c/getAllCom', {
+      const res = await fetch('https://deploy-web-abs.vercel.app/api/c/getAllCom', {
         method: 'GET',
         credentials: 'include',
       });

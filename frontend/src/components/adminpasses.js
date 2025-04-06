@@ -21,7 +21,7 @@ function dothis(){
 dispatch({ type: 'UPDATE_AVALUE', payload: true });
  }
 const gethistory=async (e)=>{
-        const response=await fetch(`http://${state.backend}:${state.port}/api/g/gatetoken`,{
+        const response=await fetch(`https://deploy-web-abs.vercel.app/api/g/gatetoken`,{
             method:'get',
             headers:{
                 'Content-Type':'application/json',

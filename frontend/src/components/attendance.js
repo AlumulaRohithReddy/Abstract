@@ -47,7 +47,7 @@ export const Attendance = () => {
   const [attendli,setattendli]=useState()
 
    const getAttendance=async()=>{
-    const response=await fetch(`http://${state.backend}:${state.port}/api/a/attend`,{
+    const response=await fetch(`https://deploy-web-abs.vercel.app/api/a/attend`,{
       method:'get',
       headers:{
           'Content-Type':'application/json',

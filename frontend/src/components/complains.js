@@ -35,7 +35,7 @@ export const Complains = () => {
      }
 
     const getallcomps=async (e)=>{
-        const response=await fetch(`http://${state.backend}:${state.port}/api/c/newcomplain`,{
+        const response=await fetch(`https://deploy-web-abs.vercel.app/api/c/newcomplain`,{
             method:'get',
             headers:{
                 'Content-Type':'application/json',

@@ -34,7 +34,7 @@ export const Temp = () => {
       const title=document.getElementById('email').value
       const message=document.getElementById('message').value
       console.log(message,title)
-      const response=await fetch(`http://${state.backend}:${state.port}/api/f/feedback`,{
+      const response=await fetch(`https://deploy-web-abs.vercel.app/api/f/feedback`,{
           method:'POST',
           headers:{
               'Content-Type':'application/json',

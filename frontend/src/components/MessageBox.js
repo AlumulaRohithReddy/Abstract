@@ -6,7 +6,7 @@ const MessageBox = () => {
 
   const fetchMessages = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/messages/get', {
+      const res = await fetch('https://deploy-web-abs.vercel.app/api/messages/get', {
         method: 'GET',
         credentials: 'include',
       });
@@ -25,7 +25,7 @@ const MessageBox = () => {
     if (!msgInput.trim()) return;
 
     try {
-      const res = await fetch('http://localhost:5000/api/messages/send', {
+      const res = await fetch('https://deploy-web-abs.vercel.app/api/messages/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',

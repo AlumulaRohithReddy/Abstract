@@ -25,7 +25,7 @@ const handlesubmit =async (e)=>{
     const password=password_input
     const mobile=mobile_input
     e.preventDefault();
-    const response=await fetch(`http://${state.backend}:${state.port}/api/auth/createuser`,{
+    const response=await fetch(`https://deploy-web-abs.vercel.app/api/auth/createuser`,{
         method:'POST',
         headers:{
             'Content-Type':'application/json'

@@ -48,7 +48,7 @@ export const Home = () => {
   }
 
   const getuserdata = async () => {
-    const response = await fetch(`http://${state.backend}:${state.port}/api/auth/getuser`, {
+    const response = await fetch(`https://deploy-web-abs.vercel.app/api/auth/getuser`, {
       method: 'get',
       headers: {
         'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ export const Home = () => {
       dispatch({ type: 'UPDATE_EMAIL', payload: json.user.email });
       dispatch({ type: 'UPDATE_MOBILE', payload: json.user.mobile });
       dispatch({ type: 'UPDATE_room', payload: json.room_no });
-      dispatch({ type: 'UPDATE_photo_url', payload: `http://${state.backend}:${state.port}/api/a/newupload/${json.user.photo_url}` });
+      dispatch({ type: 'UPDATE_photo_url', payload: `https://deploy-web-abs.vercel.app/api/a/newupload/${json.user.photo_url}` });
       NODisableli()
     } else {
       setroombook_alert("")
@@ -80,7 +80,7 @@ export const Home = () => {
 
   }
   const getroomnumbers = async () => {
-    const response = await fetch(`http://${state.backend}:${state.port}/api/b/roomnumbers`, {
+    const response = await fetch(`https://deploy-web-abs.vercel.app/api/b/roomnumbers`, {
       method: 'get',
       headers: {
         'Content-Type': 'application/json',
@@ -138,7 +138,7 @@ export const Home = () => {
     // Ensure sroom is in the proper format; if needed, parse it into an integer.
     const roomValue = parseInt(sroom, 10);
 
-    const response = await fetch(`http://${state.backend}:${state.port}/api/b/bookroom`, {
+    const response = await fetch(`https://deploy-web-abs.vercel.app/api/b/bookroom`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

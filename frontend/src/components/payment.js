@@ -22,7 +22,7 @@ const { state} = useContext(noteContext);
     setLoading(true);
 
     try {
-      const response = await fetch(`http://${state.backend}:${state.port}/api/request-payment`, {
+      const response = await fetch(`https://deploy-web-abs.vercel.app/api/request-payment`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

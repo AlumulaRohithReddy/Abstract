@@ -178,7 +178,7 @@ const sendrq=async(props)=>{
   let fdatet=`${idate.getFullYear()}-${idatemonth}-${idateday}T${idatehours}:${idatemin}`
   console.log(fdatet,props)
   if(whatid==0){
-    const response=await fetch(`http://${state.backend}:${state.port}/api/ud/updateintime`,{
+    const response=await fetch(`https://${state.backend}:${state.port}/api/ud/updateintime`,{
       method:'POST',
       headers:{
           'Content-Type':'application/json',
@@ -200,7 +200,7 @@ const sendrq=async(props)=>{
   }
   }
   else{
-  const response=await fetch(`http://${state.backend}:${state.port}/api/ud/updateouttime`,{
+  const response=await fetch(`https://deploy-web-abs.vercel.app/api/ud/updateouttime`,{
           method:'POST',
           headers:{
               'Content-Type':'application/json',

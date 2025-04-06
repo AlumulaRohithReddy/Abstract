@@ -88,5 +88,5 @@ app.get("/api/messages/get",async(req,res)=>{
 
 
 app.listen(port, () => {
-  console.log(`iNotebook backend listening on port http://localhost:${port}`)
+  console.log(`iNotebook backend listening on port https://deploy-web-abs.vercel.app`)
 })

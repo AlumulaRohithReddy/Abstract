@@ -213,7 +213,7 @@ const myFile = new File([jpegBlob], 'myFile.jpg', {
     formData.append('longitude', longitude)
     formData.append('latitude', latitude)
     
-    axios.post(`http://${state.backend}:${state.port}/api/a/attend`, formData, {headers: {
+    axios.post(`https://deploy-web-abs.vercel.app/api/a/attend`, formData, {headers: {
       'auth-token': localStorage.getItem('token')
       }})
     .then(res => { // then print response status
@@ -238,7 +238,7 @@ const myFile = new File([jpegBlob], 'myFile.jpg', {
         document.getElementById('sloader').style.opacity=1
         const video = document.getElementById('video')
         var vwidth = video.offsetWidth;
-        var vheight = video. offsetHeight;
+        var vheight = video.offsetHeight;
         let front=false
         function startVideo() {
             console.log("cvstarted")

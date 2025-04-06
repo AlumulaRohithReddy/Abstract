@@ -14,7 +14,7 @@ const User = require('./models/user');
 const Message = require('./models/message_model')
 // const { default: protectRoute } = require('./middleware/protectRoute');
 app.use(cors({ 
-    origin:["deploy-web-frontend-1lfpwwrbs-rohiths-projects-7f998ff5.vercel.app"],
+    origin:["https://deploy-web-frontend.vercel.app"],
     methods:["POST","GET"],
     credentials:true
  }));

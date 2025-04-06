@@ -188,10 +188,10 @@ export const Home = () => {
             <div className="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border" id="fb50">
               <div className="flex-auto p-4">
                 <div className="flex flex-wrap -mx-3 twrem">
-                  <div className="max-w-full px-3 lg:w-1/2 lg:flex-none">
-                    <div className="flex flex-col h-full">
+                  <div className="min-h-1/2 max-w-full px-3 lg:w-1/2 lg:flex-none">
+                    <div className="min-h-1/2 flex flex-col h-full">
                       <p className="pt-2 mb-1 font-semibold">Welcome to</p>
-                      <h5 className="font-bold">Mega Boys Hostels</h5>
+                      <h5 className="font-bold"> Smart Stay </h5>
                       <p className="mb-12">The hostel facility is available to the regular students who are on the rolls of the institute depending upon the availability.</p>
                       <a className="mt-auto mb-0 font-semibold leading-normal text-sm group text-slate-500" target={'_blank'} href="https://www.nitj.ac.in/index.php/nitj_cinfo/index/23">
                         Read More
@@ -200,10 +200,10 @@ export const Home = () => {
                     </div>
                   </div>
                   <div className="max-w-full px-3 mt-12 ml-auto text-center lg:mt-0 lg:w-5/12 lg:flex-none mbhh">
-                    <div className="h-full bg-gradient-to-tl from-purple-700 to-pink-500 rounded-xl">
+                    <div className="h-full rounded-xl">
                       {/* <img src="../assets/img/shapes/waves-white.svg" className="absolute top-0 hidden w-1/2 h-full lg:block" /> */}
                       <div className="relative flex items-center justify-center h-full">
-                        <img className="relative z-20 w-full pt-6" src={tree} />
+                        <img className="relative z-20 w-full pt-6" src='https://images.shiksha.com/mediadata/images/1695814021phptOExPr.jpeg' />
                       </div>
                     </div>
                   </div>
@@ -211,7 +211,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-half px-3 lg:flex-none belo50">
+          <div className="  w-half px-3 lg:flex-none belo50">
             <div className="border-black/12.5 shadow-soft-xl relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border p-4" id='underb50'>
               <div className="relative h-full overflow-hidden bg-cover rounded-xl bckk">
                 <span className="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 opacity-80"></span>
@@ -226,10 +226,10 @@ export const Home = () => {
                       </div>
                       <div className="carousel-inner">
                         <div className="carousel-item active">
-                          <img src={photo1} className="d-block w-100" alt="..." />
+                          <img src="https://media.getmyuni.com/azure/college-images-test/vnr-vignana-jyothi-institute-of-engineering-and-technology-vnr-vjiet-hyderabad/fa51c5d0ea5145619d523ee4d3a08ee7.jpeg" className="d-block w-100" alt="..." />
                           <div className="carousel-caption d-none d-md-block">
 
-                            <p>Plannted more than 100+ trees by students</p>
+                            <p>Eco-friendly Environment</p>
                           </div>
                         </div>
                         <div className="carousel-item">
@@ -240,8 +240,8 @@ export const Home = () => {
                           </div>
                         </div>
                         <div className="carousel-item">
-                          <img src={photo3} className="d-block w-100" alt="..." />
-                          <div className="carousel-caption d-none d-md-block">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYeBj8R6iCOvpXZRrpUH1pW6lVIW61FR65kg&s" className="d-block w-100" alt="..." />
+                          <div className="carousel-caption d-none d-md-block text-slate-800">
 
                             <p>Republic day celebration</p>
                           </div>

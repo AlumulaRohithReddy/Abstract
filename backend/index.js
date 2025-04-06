@@ -13,7 +13,11 @@ const fetchuser = require('./middleware/fetchuser');
 const User = require('./models/user');
 const Message = require('./models/message_model')
 // const { default: protectRoute } = require('./middleware/protectRoute');
-app.use(cors({ origin:true, credentials:true }));
+app.use(cors({ 
+    origin:["https://deploy-web-abs.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+ }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 // app.use(cors());
